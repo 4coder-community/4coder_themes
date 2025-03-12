@@ -11,19 +11,19 @@ defcolor_at_cursor = defcolor_back;
 defcolor_highlight_cursor_line = 0xFF131721;
 defcolor_highlight = 0xFF6C5980;
 defcolor_mark = defcolor_cursor;
-defcolor_text_default = 0xFFBFBDB6;
+defcolor_text_default = 0xFFC8C6BF;
 defcolor_at_highlight = 0xFF409FFF;
 
-defcolor_comment = 0x8DACB6BF;
-defcolor_comment_pop = {0xFF00C000, 0xFFC00000, 0xFFC0C000};
-defcolor_keyword = 0xFFFF8F40;
-defcolor_str_constant = 0xFFAAD94C;
-defcolor_char_constant = defcolor_str_constant;
-defcolor_int_constant = 0xFFD2A6FF;
+defcolor_comment        = 0x8DACB6BF;
+defcolor_comment_pop    = {0xFF00C000, 0xFFC00000, 0xFFC0C000};
+defcolor_keyword        = 0xFFFF8F40;
+defcolor_str_constant   = 0xFFA6D548;
+defcolor_char_constant  = defcolor_str_constant;
+defcolor_int_constant   = 0xFFE1B5FF;
 defcolor_float_constant = defcolor_int_constant;
-defcolor_bool_constant = defcolor_int_constant;
-defcolor_include = defcolor_str_constant;
-defcolor_preproc = 0xFFFFB454;
+defcolor_bool_constant  = defcolor_int_constant;
+defcolor_include        = defcolor_str_constant;
+defcolor_preproc        = 0xFFFFB656;
 defcolor_special_character = 0xFFFF0000;
 defcolor_ghost_character = 0xFF4E5E46;
 
@@ -40,21 +40,22 @@ defcolor_pop1 = 0xFF3C57DC;
 defcolor_pop2 = 0xFFFF0000;
 
 defcolor_back_cycle = { 0x0800F3F3, 0x08F379F3, 0x0800F379 };
-//defcolor_text_cycle = { 0xFF00F3F3, 0xFFF379F3, 0xFF00F379 };
 defcolor_text_cycle = {0xFF1F9FFA, 0xFFFED73D, 0xFFD972D3};
 
 defcolor_line_numbers_back = 0xFF0B0E14;
 defcolor_line_numbers_text = 0xFF565B66;
 
 // QOL Custom layer colours (And BYP's layer)
-defcolor_function                   =  0xFFFFB454;
-defcolor_type                       =  0xFF39BAE6;
-defcolor_macro                      =  defcolor_preproc;
-defcolor_enum                       =  0xFFD2A6FF;
-defcolor_primitive                  =  defcolor_type;
-defcolor_struct                     =  defcolor_keyword;
-defcolor_non_text                   =  0x8090B080;
-defcolor_control                    =  defcolor_keyword;
+defcolor_function  = 0xFFFFB656;
+defcolor_type      = 0xFF5DD6FF;
+defcolor_macro     = defcolor_preproc;
+defcolor_enum      = defcolor_int_constant;
+defcolor_global    = 0xFFb2fdef;
+defcolor_primitive = defcolor_type;
+defcolor_struct    = defcolor_keyword;
+defcolor_non_text  = 0x40C8C6BF;
+defcolor_control   = defcolor_keyword;
+// defcolor_global    = defcolor_text_default; // 0xFFBFBDB6
 
 // Support BYP vim layer 
 defcolor_vim_filebar_pop            =  0xFFE9B359;
