@@ -53,9 +53,9 @@ defcolor_enum      = defcolor_int_constant;
 defcolor_global    = 0xFFb2fdef;
 defcolor_primitive = defcolor_type;
 defcolor_struct    = defcolor_keyword;
-defcolor_non_text  = 0x40C8C6BF;
+defcolor_non_text  = 0x80C8C6BF;
 defcolor_control   = defcolor_keyword;
-// defcolor_global    = defcolor_text_default; // 0xFFBFBDB6
+
 
 // Support BYP vim layer 
 defcolor_vim_filebar_pop            =  0xFFE9B359;

@@ -47,7 +47,19 @@ defcolor_text_cycle = { 0xFF00F3F3, 0xFFF379F3, 0xFF00F379 };
 defcolor_line_numbers_back = 0xFF202020;
 defcolor_line_numbers_text = 0xFF404040;
 
-fleury_color_syntax_crap                = 0x8090B080;
+// QOL Colors:
+defcolor_non_text  = 0x8090B080;
+defcolor_function  = 0xFF1088FF;
+defcolor_type      = 0xFF10FF88;
+defcolor_macro     = defcolor_preproc;
+defcolor_enum      = 0xFFF3F3F3;
+defcolor_control   = defcolor_keyword;
+defcolor_primitive = defcolor_keyword;
+defcolor_struct    = defcolor_keyword;
+defcolor_global    = defcolor_text_default;
+
+
+fleury_color_syntax_crap                = defcolor_non_text;
 fleury_color_operators                  = 0xFFB0D0D0;
 fleury_color_inactive_pane_overlay      = 0x40000000;
 fleury_color_inactive_pane_background   = 0xFF101010;
@@ -59,12 +71,12 @@ fleury_color_brace_annotation           = { 0xC000F3F3, 0xC0F379F3, 0xC000F379 }
 
 // NOTE(jack): Found by picking product type color and choosing the analogous color 
 // combination: https://www.canva.com/colors/color-wheel/
-fleury_color_index_product_type         = 0xFF10FF88;
-fleury_color_index_sum_type             = fleury_color_index_product_type;
-fleury_color_index_function             = 0xFF1088FF;
+fleury_color_index_product_type         = defcolor_type;
+fleury_color_index_sum_type             = defcolor_type;
+fleury_color_index_function             = defcolor_function;
 
-fleury_color_index_macro                = defcolor_preproc;
-fleury_color_index_constant             = 0xFFF3F3F3; // Enum Values
+fleury_color_index_macro                = defcolor_macro;
+fleury_color_index_constant             = defcolor_enum; // Enum Values
 fleury_color_index_comment_tag          = 0xFFFFFFFF;
 fleury_color_cursor_macro               = 0xFFC060C0;
 
